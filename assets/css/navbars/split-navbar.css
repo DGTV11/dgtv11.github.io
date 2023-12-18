@@ -29,11 +29,11 @@ nav#topnav a.split {
     float: right;
 }
 
-nav#topnav a.split:last-child {
+nav#topnav a.split.middle-right {
     border-left: 1px solid #777777;
 }
 
-nav#topnav a.split:first-child {
+nav#topnav a.split.extreme-right {
     border-right: none;
 }
 
