@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Space+Mono&display=swap');
+
+nav#topnav {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #d8d8d8;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+nav#topnav a {
+    float: left;
+    font-family: "Space Mono", "Courier New", Courier, monospace;
+    display: inline;
+    text-align: center;
+    display: block;
+    color: #000;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-right: 1px solid #777777;
+}
+
+nav#topnav a.split {
+    float: right;
+}
+
+nav#topnav a.split:last-child {
+    border-left: 1px solid #777777;
+}
+
+nav#topnav a.split:first-child {
+    border-right: none;
+}
+
+nav#topnav a.active {
+  background-color: rgb(149, 149, 149);
+}
+
+nav#topnav a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+nav#topnav a.icon {
+    display: none;
+}
+
+@media screen and (max-width: 1300px) {
+    nav#topnav a:not(:first-child) {display: none;}
+    nav#topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    nav#topnav.responsive {position: fixed;}
+    nav#topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    nav#topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    nav#topnav.responsive a.split {
+        background-color: #a8a8a8;
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}

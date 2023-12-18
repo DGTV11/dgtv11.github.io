@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/navbars/split-navbar.css">
+    <link rel="stylesheet" href="/assets/css/portfolio.css">
+
+    <script src="/assets/js/typewriter.js"></script>
+    <script src="/assets/js/run-typewriter.js"></script>
+    <script src="/assets/js/toggle-dropdown.js"></script>
+
+    <title>My portfolio</title>
+</head>
+
+<body onpageshow="twPortfolio();">
+    <header>
+        <div id="t"></div>
+        <nav id="topnav" class="">
+            <a href="/">Home</a>
+            <a href="/nitrogenos">NitrogenOS</a>
+            <a href="/portfolio" class="active">Portfolio</a>
+            <a href="/blog">Blog</a>
+
+            <a class="split" href="#pe">Personal projects</a>
+            <a class="split" href="#o">Others (LCCL)</a>
+            <a class="split" href="#r">Robotics (LCCL)</a>
+            <a class="split" href="#p">Python (LCCL)</a>
+            <a class="split" href="#a">About me</a>
+            <a class="split" href="#t">Top</a>
+
+            <a href="javascript:void(0);" class="icon" onclick="toggleDropdown()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+        
+        <br>
+        <br>
+        
+        <h1 id="title-animation"><span class="cursor">|</span></h1>
+    </header>
+    <footer>
+        <section id="a">
+            <header><h2 class="sectionheader">About me</h2></header>
+            <footer>
+                <p id="ap"><span class="cursor">|</span></p>
+            </footer>
+        </section>
+
+        <section id="p">
+            <header><h2 class="sectionheader">Python@LCCL</h2></header>
+            <footer>
+                <section>
+                    <header><h2 class="projtitle">LCCL Practice Sheets 1 through 8 (For Python Problem Solving 2)</h2></header>
+                    <footer>
+                        <section>
+                            <header><h2>Description</h2></header>
+                            <footer>
+                                <p>These are the programs I created over the last few years for Python Problem Solving 2.</p>
+                            </footer>
+                        </section>
+                        <section>
+                            <header><h2>Links</h2></header>
+                            <footer>
+                                <ul>
+                                    <li><a href="https://github.com/DGTV11/LCCL-PS-1-to-PS-8" target="_blank">GitHub Repository</a></h3></li>
+                                </ul>
+                            </footer>
+                        </section>
+                    </footer>
+                </section>
+                <section>
+                    <header><h2 class="projtitle">TicTacToe X Minimax</h2></header>
+                    <footer>
+                        <div class="flex-container">
+                            <section>
+                                <header><h2>Description</h2></header>
+                                <footer>
+                                    <p>This is my final project for Python Problem Solving 2, which involves creating a program that demonstrates much of what was learned in Python 2 and 1.</p>
+                                </footer>
+                            </section>
+                            <section>
+                                <header><h2>What have I learnt?</h2></header>
+                                <footer>
+                                    <p>I learnt how to...</p>
+                                    <ol>
+                                        <li>Create a simple Minimax search algorithm in Python.</li>
+                                        <li>Better use the Tkinter library in Python.</li>
+                                        <li>Utilise the unittest library in Python to unit-test the basic components of a Python program in a cleaner way.</li>
+                                    </ol>
+                                </footer>
+                            </section>
+                        </div>
+                        
+                        <section>
+                            <header><h2>What inspired me to create this program?</h2></header>
+                            <footer>
+                                <p>I was inspired by a video made by <a href="https://www.youtube.com/@SebastianLague">Sebastian Lague</a> that showed how he created a chess bot using - surprise, surprise - a Minimax search algorithm to find close-to-optimal chess moves.</p>
+                            </footer>
+                        </section>
+                        <section>
+                            <header><h2>Game</h2></header>
+                            <footer>
+                                <div class="replit-iframe-container">
+                                    <iframe class="responsive-iframe" width="900" height="600" src="https://replit.com/@DGTV11/TicTacToe-X-Minimax?embed=true"></iframe>
+                                </div>           
+                            </footer>
+                        </section>
+                    </footer>
+                </section>
+            </footer>
+        </section>
+
+        <section id="r">
+            <header><h2 class="sectionheader">Robotics@LCCL</h2></header>
+            <footer>
+                <section>
+                    <header><h2 class="projtitle">Project Clock</h2></header>
+                    <footer>
+                        <div class="flex-container">
+                            <section>
+                                <header><h2>Description</h2></header>
+                                <footer>
+                                    <p>This was my final project for LCCL Robotics and Coding, which involves thinking about a problem you wish to solve and creating a robot. My idea was to build a clock that displays the time on a digital display. I chose that idea (which was my own) as I felt that it would be a simple final project to build and program. It also has an alarm function, a time change function, and a reset function. Oh, and one more thing; it has an ultrasonic ruler!</p>
+                                </footer>
+                            </section>
+                            <section>
+                                <header><h2>What have I learnt?</h2></header>
+                                <footer>
+                                    <p>I learnt...</p>
+                                    <ol>
+                                        <li>The importance of simple code, design, and features; it allows users to easily navigate the UI (design + code) and developers to easily debug the code.</li>
+                                        <li>The importance of refactoring code; it allows developers to make better code and make it more readable.</li>
+                                        <li>The importance of unit testing; it allows developers to test their code and make sure it works as expected.</li>
+                                    </ol>
+                                </footer>
+                            </section>
+                        </div>
+                        <section>
+                            <header><h2>Demonstration</h2></header>
+                            <footer>
+                                <div class="video-iframe-container">
+                                    <iframe class="responsive-iframe" width="840" height="630" src="https://www.youtube.com/embed/X-Hf2jiuK-Y"></iframe>
+                                </div>
+                            </footer>
+                        </section>
+                    </footer>
+                </section>
+            </footer>
+        </section>
+
+        <section id="o">
+            <header><h2 class="sectionheader">Other LCCL-related projects</h2></header>
+            <footer>
+                <section>
+                    <header><h2 class="projtitle">An Infinite World</h2></header>
+                    <footer>
+                        <section>
+                            <header><h2>Description</h2></header>
+                            <footer>
+                                <p>This was my final project for LCCL Coding Fundementals 3. It is a 2-dimensional game coded in Scratch where you can explore an infinite world to collect items to fix a rocket.</p>
+                                <p>Do note that I had made this project quite some time ago!</p>
+                            </footer>
+                        </section>
+                        <div class="flex-container">
+                            <section>
+                                <header><h2>What have I learnt?</h2></header>
+                                <footer>
+                                    <p>I learnt how to...</p>
+                                    <ol>
+                                        <li>Implement 'chunk' loading and saving in Scratch through mapping chunk coordinates to entity and object locations and statuses.</li>
+                                        <li>Use hitboxes and link them to clones of a sprite (objects made from a class).</li>
+                                    </ol>
+                                </footer>
+                            </section>
+                            <section>
+                                <header><h2>Thoughts and feelings</h2></header>
+                                <footer>
+                                    <p>If I had to do this all over again, I would make a more optimised program as it would be much more readable and easier to debug than the spaghetti code I wrote before. I would also consider using unit-testing more often, as that would allow me to zero in on errors quicker and more efficiently. However, unit testing requires organised code for easier execution.</p>
+                                </footer>
+                            </section>
+                        </div>
+                        <div class="flex-container">
+                            <section>
+                                <header><h2>Instructions</h2></header>
+                                <footer>
+                                    <ul>
+                                        <li>WASD/ARROW KEYS = Movement</li>
+                                        <li>H = Harvest fuel</li>
+                                        <li>F = Deposit all collected fuel into the rocket's fuel tank</li>
+                                        <li>SPACE = Shoot</li>
+                                        <li>Press the Green Flag then X if you want to restart the game</li>
+                                    </ul>
+                                    <p>Note: You will need to deposit at least 100 diamond fuel to power the rocket!</p>
+                                </footer>
+                            </section>
+                            <section>
+                                <header><h2>Story</h2></header>
+                                <footer>
+                                    <p>Giga has crash-landed on a faraway planet. Although she has already fixed her rocket, all of her ship's diamond fuel leaked out upon crashing, rendering her ship inoperable! Help her get all the diamond fuel she needs to fly the ship back to her home planet.</p>
+                                </footer>
+                            </section>
+                        </div>
+                        <section>
+                            <header><h2>Game</h2></header>
+                            <footer>
+                                <div class="scratch-iframe-container">
+                                    <iframe class="responsive-iframe" src="https://scratch.mit.edu/projects/386689043/embed" allowtransparency="true" width="970" height="804" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                                </div>
+                            </footer>
+                        </section>
+                    </footer>
+                </section>
+            </footer>
+        </section>
+        <section id="pe">
+            <header><h2 class="sectionheader" id="peh">Personal projects</h2></header>
+            <footer>
+                <section>
+                    <header><h2 class="projtitle">NitrogenOS</h2></header>
+                    <footer>
+                        <div class="flex-container">
+                            <section>
+                                <header><h2>Description</h2></header>
+                                <footer>
+                                    <p>This is an old operating system simulator that I had made in Python 3 on a MacBook.</p>
+                                </footer>
+                            </section>
+                            <section>
+                                <header><h2>Links</h2></header>
+                                <footer>
+                                    <ul>
+                                        <li><a href="../NitrogenOS" target="_blank">NitrogenOS downloads and showcases</a></li>
+                                    </ul>
+                                </footer>
+                            </section>
+                        </div>
+                    </footer>
+                </section>
+                <section>
+                    <header><h2 class="projtitle">Genetic_1</h2></header>
+                    <footer>
+                        <section>
+                            <header><h2>Description</h2></header>
+                            <footer>
+                                <p>This is a genetic algorithm made in Python 3 that utilises an improved version of brainf*** (an esoteric programming language known for its extreme minimalism).</p>
+                            </footer>
+                        </section>
+                        <div class="flex-container">
+                            <section>
+                                <header><h2>What have I learnt?</h2></header>
+                                <footer>
+                                    <p>I learnt how to...</p>
+                                    <ol>
+                                        <li>Map dictionaries to pieces of code.</li>
+                                        <li>Utilise the pickle module to save and load objects (so that I will not have to redo the entire simulation every run).</li>
+                                        <li>Use sorting in a simple version of natural selection.</li>
+                                        <li>Extend brainf*** with more logic and data pointers.</li>
+                                    </ol>
+                                </footer>
+                            </section>
+                            <section>
+                                <header><h2>What inspired me to create this program?</h2></header>
+                                <footer>
+                                    <p>I first wanted to make a self-improving Python algorithm, and searched the web (before ChatGPT). After some time, I chanced upon a website outlining the steps to make a similar algorithm to that I envisioned in a version of C. However, that method was much more anchored to reality as it used brainf***, a much simpler programming language, and a genetic algorithm, which would be much faster and easier than a self-improving singular piece of Python code.</p>
+                                </footer>
+                            </section>
+                        </div>
+                        <section>
+                            <header><h2>Links</h2></header>
+                            <footer>
+                                <ul>
+                                    <li><a href="https://github.com/DGTV11/Genetic-1" target="_blank">GitHub Repository</a></li>
+                                    <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwizz8HtoJf_AhVm6jgGHV_0AB4QFnoECAsQAQ&url=https%3A%2F%2Fesolangs.org%2Fwiki%2FBrainfuck&usg=AOvVaw2yl8r66S6bB2ApBQBoYBAs" target="_blank">Brainf***</a></li>
+                                </ul>
+                            </footer>
+                        </section>
+                    </footer>
+                </section>
+                <section>
+                    <header><h2 class="projtitle">HyperBF</h2></header>
+                    <footer>
+                        <section>
+                            <header><h2>Description</h2></header>
+                            <footer>
+                            <p>A continuation of that improved version of brainf*** used in Genetic_1 which was made in Python 3. First, make a .hBFx file and add your code and comments to it according to the HyperBF syntax. Next, compile it into a .hBF file using the compiler. Finally, run the .hBF file using the interpreter. Please don't mind my blatant misuse of terminology as I did not really know how to make a proper and full-fledged programming language then (that is also the reason for much of the limitations in syntax).</p>
+                            </footer>
+                        </section>
+                        <section>
+                            <header><h2>Links</h2></header>
+                            <footer>
+                                <ul>
+                                    <li><a href="https://github.com/DGTV11/HyperBF" target="_blank">GitHub Repository</a></li>
+                                </ul>
+                            </footer>
+                        </section>
+                    </footer>
+                </section>
+            </footer>
+        </section>
+</footer>
+</body>
+
+</html>

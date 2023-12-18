@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital@0;1&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+    text-align: center;
+    font-family: "Space Mono", "Courier New", Courier, monospace;
+    background-color: #161618;
+    color: #c9c9c9;
+}
+
+a {
+    font-family: "JetBrains Mono", "Space Mono", "Courier New", Courier, monospace;
+    color: rgb(97, 138, 103);
+}
+
+/* Animations */
+span.cursor {
+    font-weight: bold;
+    color: darkcyan;
+}
+
+div.animation h1 span.cursor {
+    font-weight: bold;
+    font-style: italic;
+    color: skyblue;
+}
+
+div.animation {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+div.animation h1 {
+    font-family: "JetBrains Mono", "Space Mono", "Courier New", Courier, monospace;
+    font-size: clamp(10px, 75px, 100px);
+    font-weight: normal;
+    font-style: italic;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 800px) {
+    div.animation img {
+        max-width: 100%;
+        height: auto;
+    }
+}

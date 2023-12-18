@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta http-equiv="Refresh" content="0; url='../Closed/renno.html'"> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/navbars/grey-navbar.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+
+    <script src="/assets/js/typewriter.js"></script>
+    <script src="/assets/js/run-typewriter.js"></script>
+    <script src="/assets/js/toggle-dropdown.js"></script>
+
+    <title>Blog</title>
+</head>
+<body onpageshow="twBlog()">
+    <header>
+        <nav id="topnav" class="">
+            <a href="/">Home</a>
+            <a href="/nitrogenos">NitrogenOS</a>
+            <a href="/portfolio">Portfolio</a>
+            <a href="/blog" class="active">Blog</a>
+
+            <a href="javascript:void(0);" class="icon" onclick="toggleDropdown()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+
+        <br>
+        <br>
+
+        <h1 id="title-animation"><span class="cursor">|</span></h1>
+    </header>
+    <footer>
+        <article>
+            <header><h2>Hello!</h2></header>
+            <footer>
+                <p>Hi, and welcome! This is my first blog post! I am not really sure about what to write about, so here is some C code that turns an odd integer into an even integer:</p>
+                <pre><code class="language-C">
+int make_even(int <var>n</var>) {
+    return <var>n</var> >> 1 << 1;
+}
+                </code></pre>
+                <p>This works as all odd integers have a one in their least significant bit, whilst all even integers have a zero instead. Hence, by right-shifting then left-shifting a number by 1, we can turn an odd integer or even integer into an even integer efficiently.</p>
+            </footer>
+        </article>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Space+Mono&display=swap');
+
+nav#topnav {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid rgb(112, 176, 255);
+    background-color: rgb(51, 143, 255);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+nav#topnav a {
+    float: left;
+    font-family: "Space Mono", "Courier New", Courier, monospace;
+    display: inline;
+    text-align: center;
+    display: block;
+    color: #000;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-right: 1px solid rgb(112, 176, 255);
+}
+
+nav#topnav a.active {
+    background-color: rgb(40, 103, 180);
+}
+
+nav#topnav a:hover:not(.active) {
+    background-color: rgb(17, 48, 86);
+    color: white;
+}
+
+nav#topnav a.icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    nav#topnav a:not(:first-child) {display: none;}
+    nav#topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    nav#topnav.responsive {position: fixed;}
+    nav#topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    nav#topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
