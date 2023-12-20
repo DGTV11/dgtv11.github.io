@@ -50,7 +50,7 @@ nav#topnav a.icon {
     display: none;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1390px) {
     nav#topnav a:not(:first-child) {display: none;}
     nav#topnav a.icon {
         float: right;
