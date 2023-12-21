@@ -23,3 +23,15 @@ function twBlog() {
 function twPortfolio() {
     typeWriter('My portfolio', 'title-animation');
 }
+
+function twAILang() {
+    typeWriter('AILang', 'title-animation');
+}
+
+function twAILangDocs() {
+    typeWriter('AILang Documentation', 'title-animation');
+}
+
+function twAILangExamples() {
+    typeWriter('AILang Examples', 'title-animation')
+}
