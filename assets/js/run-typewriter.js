@@ -26,6 +26,10 @@ function twPortfolio() {
 
 function twAILang() {
     typeWriter('AILang', 'title-animation');
+    setTimeout(
+        (() => typeWriter('A programming language programmed mainly in Python for machine learning purposes', 'desc-animation')),
+        900
+    );
 }
 
 function twAILangDocs() {
@@ -33,5 +37,5 @@ function twAILangDocs() {
 }
 
 function twAILangExamples() {
-    typeWriter('AILang Examples', 'title-animation')
+    typeWriter('AILang Examples', 'title-animation');
 }

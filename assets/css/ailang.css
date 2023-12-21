@@ -33,8 +33,14 @@ body header h1 span.cursor {
     color: blue;
 }
 
+body header p span.cursor {
+    font-weight: bold;
+    color: blue;
+}
+
 body header h1 {
     padding-left: 10px;
+    margin-bottom: 0%;
     font-size: 75px;
     font-weight: normal;
     font-style: italic;

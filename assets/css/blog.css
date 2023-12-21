@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital@0;1&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 body {
     font-family: "Space Mono", "Courier New", Courier, monospace;
@@ -8,17 +8,6 @@ body {
 article {
     background-color: rgb(149, 149, 149);
     padding: 10px;
-}
-
-pre {
-    border: 2px solid rgb(0, 0, 0);
-    border-radius: 12px;
-    padding: 0px;
-}
-
-code {
-    font-family: "JetBrains Mono", "Courier New", Courier, monospace;
-    font-feature-settings: "liga";
 }
 
 .projtitle {
@@ -41,6 +30,10 @@ article header h2 {
     margin-right: 0;
     font-weight: bold;
     background-color: rgb(149, 149, 149);
+}
+
+a {
+    font-family: "Jetbrains Mono", "Space Mono", "Courier New", Courier, monospace;
 }
 
 /* Title animation */
